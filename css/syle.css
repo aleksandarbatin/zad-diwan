@@ -440,7 +440,10 @@ address {
 }
 
 .itemright img {
+	width:30px;
 	padding-top:15px;
+	padding-right:10px;
+	float:left;
 }
 
 .partleft {
@@ -451,6 +454,8 @@ address {
 .partright a {
 	text-decoration:none;
 	color:#5B5B5B;
+	float:right;
+	margin-top:20px;
 	
 }
 .itemright {
@@ -656,6 +661,24 @@ ul.office li {
 .itemleft {
 	background-color:#2D2D2D;
 }
+
+
+.itemright img {
+	width:20px;
+	padding-top:15px;
+	padding-right:0px;
+	float: none;
+}
+
+.partright a {
+	text-decoration:none;
+	color:#5B5B5B;
+	float:none;
+	margin-top:0px;
+	
+}
+
+
 }
 
 
