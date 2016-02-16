@@ -442,7 +442,7 @@ address {
 .itemright img {
 	width:30px;
 	padding-top:15px;
-	padding-right:10px;
+	padding-right:5px;
 	float:left;
 }
 
@@ -456,6 +456,7 @@ address {
 	color:#5B5B5B;
 	float:right;
 	margin-top:20px;
+	padding-left:5px;
 	
 }
 .itemright {
@@ -678,6 +679,30 @@ ul.office li {
 	
 }
 
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.container {
+	width:100%;
+}
+
+.logo {
+	margin-left:20px;
+}
+
+.navbar {
+	margin-right:20px;
+}
+
+.copyright span {
+	margin-left:20px;
+}
+
+.itemright {
+	margin-right:20px;
+}
 
 }
 
