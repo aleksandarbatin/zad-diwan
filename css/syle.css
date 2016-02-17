@@ -117,7 +117,7 @@ a.button {
 	font-size:10px;
     display: block;
     padding: 10px 0;
-    border-bottom:: 1px solid #252525;
+    border-bottom: 1px solid #252525;
     color:#EAEAEA;
 	letter-spacing:1px;
     text-decoration: none;
@@ -390,7 +390,7 @@ ul.office li {
 
 ul.office li h5 {
 	display:inline-block;
-	font-family:400;
+	font-weight:400;
 	font-size: 18px;
 	color: #FFFFFF;
 	letter-spacing: 2px;
@@ -430,7 +430,7 @@ address {
 }
 
 .partright {
-	padding-top::25px;
+	padding-top:25px;
 }
 
 .itemright img {
@@ -690,7 +690,6 @@ ul.office li {
 	margin-left:10px;
 }
 	
-}
 
 
 }
