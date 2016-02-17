@@ -459,8 +459,46 @@ address {
 
 
 /* ===========================
---- Mobile
+--- Responsivnes
 ============================ */
+
+@media only screen and (max-width: 1200px) {
+
+.container {
+	width:100%;
+}
+
+.logo {
+	margin-left:20px;
+}
+
+.navbar {
+	margin-right:20px;
+}
+
+.copyright span {
+	margin-left:20px;
+}
+
+.itemright {
+	margin-right:20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.navigation {
+		padding:15px 0;
+	}
+
+	.navbar {
+		display:none;
+	}
+
+	.menu-icon {
+		display:inline;
+		float:right;
+	}
+
+}
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
 
@@ -639,7 +677,7 @@ ul.office li {
 	height:auto;
 }
 .copyright span {
-	margin-left:0;
+	margin-left:0px;
     font-size: 10px;
     letter-spacing: 1px;
 }
@@ -691,31 +729,7 @@ ul.office li {
 }
 	
 
-
 }
 
-@media only screen and (max-width: 1200px) {
-
-.container {
-	width:100%;
-}
-
-.logo {
-	margin-left:20px;
-}
-
-.navbar {
-	margin-right:20px;
-}
-
-.copyright span {
-	margin-left:20px;
-}
-
-.itemright {
-	margin-right:20px;
-}
-
-}
 
 
