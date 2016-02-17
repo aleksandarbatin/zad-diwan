@@ -470,6 +470,11 @@ address {
 	width:100%;
 }
 
+.header{
+	background-position:center;
+	background-size:cover;
+}
+
 .logo {
 	margin-left:20px;
 }
@@ -500,6 +505,16 @@ address {
 .menu-icon {
     display:inline;
     float:right;
+}
+
+.service ul li {
+	width:100%;
+	display:block;
+	
+}
+
+.header .intro p {
+    padding: 20px 150px 30px;
 }
 
 }
