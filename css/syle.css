@@ -42,7 +42,7 @@ ul.inline li.beige {
 a.tags {
 	font-weight:400;
 	font-size: 16px;
-	color: #C41230; ( red)
+	color: #C41230; (red)
 	letter-spacing: 2px;
 	text-decoration:none;
 	padding:5px 20px;
@@ -80,6 +80,8 @@ a.button {
 	display:none;
 }
 
+/*Toggle menu*/
+
 #navmenu {
     /*padding: 10px;*/
     background-color: rgba(51, 51, 51, 0.97);
@@ -88,7 +90,7 @@ a.button {
 	position:absolute;
 	width:100%;
 }
-/*Toggle menu*/
+
 #navmenu ul {
     display: none;
     list-style: none;
@@ -484,19 +486,21 @@ address {
 	margin-right:20px;
 }
 
+}
+
 @media only screen and (max-width: 768px) {
-	.navigation {
-		padding:15px 0;
-	}
+.navigation {
+    padding:15px 0;
+}
 
-	.navbar {
-		display:none;
-	}
+.navbar {
+    display:none;
+}
 
-	.menu-icon {
-		display:inline;
-		float:right;
-	}
+.menu-icon {
+    display:inline;
+    float:right;
+}
 
 }
 
@@ -539,7 +543,7 @@ address {
 }
 
 
-.intro p{
+.intro p {
 	font-weight:600;
 	text-transform:uppercase;
 }
@@ -552,7 +556,8 @@ address {
 	width:100%;
 	display:block;
 	
-}	
+}
+    
 .logo {
 	margin-left:15px;
 }
@@ -622,6 +627,7 @@ a.tags {
     padding: 3px 10px;
     margin-top: 5px;
 }
+    
 a.button {
    display:none;
 }
@@ -661,6 +667,7 @@ ul.office li h5 {
     letter-spacing: 2px;
     margin: 10px 0;
 }
+    
 ul.office li img {
     margin-bottom: -3px;
     margin-right:0px;
@@ -676,6 +683,7 @@ ul.office li {
 .copyright {
 	height:auto;
 }
+    
 .copyright span {
 	margin-left:0px;
     font-size: 10px;
