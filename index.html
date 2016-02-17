@@ -14,7 +14,7 @@
             	<div class="logo">
             		<a href="index.html"><img src="img/diwanee-logo.png"></a>
             	</div>
-                <a class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;"><img src="img/VisualEditor_-_Icon_-_Menu.svg.png" class="menu-icon" width="40" height="30"></a>
+                <a class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;"><img src="img/VisualEditor_-_Icon_-_Menu.svg.png" class="menu-icon" id="menu_ham" width="40" height="30"><img src="img/cross.png" class="menu-iconx" id="menu_x" width="30" height="30"></a>
                 <nav id="navmenu">
     				<ul id="navmenu_list" role="navfallmanu">
         				<li><a href=#>O nama</a></li>
@@ -189,15 +189,23 @@
         </div>
     </div>
     <script type="text/javascript">
-	var originalNavClasses;
-	function toggleNav() {
-    var elem = document.getElementById('navmenu_list');
-    var classes = elem.className;
-    if (originalNavClasses === undefined) {
-        originalNavClasses = classes;
-    }
-    elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
-	}
+	var nav = document.getElementById('navmenu_list');
+    var ham = document.getElementById('menu_ham');
+    var cross = document.getElementById('menu_x');
+
+function toggleNav(e) {
+    nav.classList.toggle('expanded');
+    ham.classList.toggle('hideham');
+    cross.classList.toggle('visiblex');
+    e.preventDefault();
+}
+
+document
+    .getElementById('navmenu')
+    .getElementsByClassName('menu_button')[0]
+    .onclick = toggleNav;
+
+nav.onclick = toggleNav;
 	</script>
 </body>
 </html>

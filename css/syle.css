@@ -76,14 +76,22 @@ a.button {
 .container:after {
 	clear:both;
 }
+
 .menu-icon {
 	display:none;
+}
+
+.menu-iconx {
+	display:none;
+}
+
+#navmenu ul {
+    display: none;
 }
 
 /*Toggle menu*/
 
 #navmenu {
-    /*padding: 10px;*/
     background-color: rgba(51, 51, 51, 0.97);
     color: #fff;
     text-align: center;
@@ -103,12 +111,20 @@ a.button {
     display: block;
 }
 
+.visiblex {
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+}
+
 #navmenu li {
 	border-bottom:1px solid #4B4B4B;
 }
+
 #lileft {
 	text-align:left;
 }
+
 #lileft a {
 	float:left;
 	margin-left:10px;
@@ -131,9 +147,12 @@ a.button {
 	padding-top:5px;
 	margin-right:10px;
 }
+
+
 /* ===========================
 --- Navigation - navbar
 ============================ */
+
 .navigation {
     font-size: 13px;
     color: #333;
@@ -158,6 +177,7 @@ a.button {
    text-decoration:none;
    color: #333;
 }
+
 .navbar ul li:last-child {
 	padding-right:0px;
 }
@@ -170,9 +190,11 @@ a.button {
     float: right;
     
 }
+
 /* ===========================
 --- Header, Intro
 ============================ */
+
 .header {
 	margin-top:0;
 	width:100%;
@@ -181,7 +203,7 @@ a.button {
 
 }
 
-.intro{
+.intro {
 	padding: 20px 0 200px;
 }
 
@@ -272,7 +294,7 @@ p.lower {
 .career-jobs h3 {
 	font-weight:600;
 	font-size: 28px;
-	color: #333333;
+	color: #333;
 	letter-spacing: 2.33px;
 	line-height: 36px;
 	text-align:left;
@@ -290,7 +312,6 @@ p.lower {
 
 .dark {
 	background-color:#2D2D2D;
-
 }
 
 .dark h3 {
@@ -327,9 +348,11 @@ a.more {
 	text-decoration:none;
 	text-align: center;
 }
+
 /* ===========================
 --- About
 ============================ */
+
 .about .info-text h3 {
 	font-weight:600;	
 	font-size: 60px;
@@ -359,6 +382,7 @@ p.bottom-text {
 	padding:40px 170px 20px;
 	margin:0;
 }
+
 #newrow {
 	padding-top: 10px;
 }
@@ -366,6 +390,7 @@ p.bottom-text {
 /* ===========================
 --- Contact
 ============================ */
+
 .contact {
 	text-align:center;
 	padding:60px 0 80px;
@@ -376,6 +401,7 @@ p.bottom-text {
 /* ===========================
 --- Footer
 ============================ */
+
 .footer {
 	background-color:#2D2D2D;
 }
@@ -416,6 +442,7 @@ address {
 /* ===========================
 --- Copyright
 ============================ */
+
 .copyright {
 	background-color:#222222;
 	height:60px;
@@ -470,7 +497,7 @@ address {
 	width:100%;
 }
 
-.header{
+.header {
 	background-position:center;
 	background-size:cover;
 }
@@ -494,17 +521,9 @@ address {
 }
 
 @media only screen and (max-width: 768px) {
+
 .navigation {
     padding:15px 0;
-}
-
-.navbar {
-    display:none;
-}
-
-.menu-icon {
-    display:inline;
-    float:right;
 }
 
 .service ul li {
@@ -514,7 +533,7 @@ address {
 }
 
 .header .intro p {
-    padding: 20px 150px 30px;
+    padding: 20px 50px 30px;
 }
 
 }
@@ -524,7 +543,8 @@ address {
 .container{
 	width:100%;
 }
-.navigation {
+
+    .navigation {
 	padding:15px 0;
 }
 
@@ -749,6 +769,10 @@ ul.office li {
     float: none;
 	margin-bottom:20px;
 	margin-left:10px;
+}
+    
+.hideham {
+    display:none;
 }
 	
 
