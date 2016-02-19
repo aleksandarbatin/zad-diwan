@@ -42,13 +42,16 @@ ul.inline li.beige {
   background-color: #fbfbfb;
 }
 
-/* line 33, ../sass/general/_mastergen.sass */
+/* line 32, ../sass/general/_mastergen.sass */
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+/* line 35, ../sass/general/_mastergen.sass */
 a.tags {
   font-weight: 400;
   font-size: 16px;
   color: #c41230;
-  letter-spacing: 2px;
-  text-decoration: none;
   padding: 5px 20px;
   border: 1px solid silver;
   margin-top: 10px;
@@ -59,31 +62,29 @@ a.button {
   border: 1px solid #979797;
   font-size: 18px;
   color: #333333;
-  letter-spacing: 2px;
   line-height: 23px;
   text-transform: uppercase;
   padding: 10px 35px;
-  text-decoration: none;
   float: right;
 }
 
-/* line 55, ../sass/general/_mastergen.sass */
+/* line 53, ../sass/general/_mastergen.sass */
 .dark a.button {
   color: #eaeaea;
 }
 
-/* line 58, ../sass/general/_mastergen.sass */
+/* line 56, ../sass/general/_mastergen.sass */
 .container {
   width: 1200px;
   margin: 0 auto;
   display: block;
 }
-/* line 62, ../sass/general/_mastergen.sass */
+/* line 60, ../sass/general/_mastergen.sass */
 .container:after {
   clear: both;
 }
 
-/* line 65, ../sass/general/_mastergen.sass */
+/* line 63, ../sass/general/_mastergen.sass */
 .menu-icon, .menu-iconx {
   display: none;
 }
@@ -101,54 +102,52 @@ a.button {
 }
 
 /* line 12, ../sass/layout/_section.sass */
+.navbar {
+  float: right;
+}
+/* line 14, ../sass/layout/_section.sass */
 .navbar ul {
   display: inline-block;
   list-style: none;
 }
-/* line 15, ../sass/layout/_section.sass */
-.navbar ul li {
+/* line 17, ../sass/layout/_section.sass */
+.navbar li {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
   text-transform: uppercase;
 }
-/* line 20, ../sass/layout/_section.sass */
-.navbar ul li a {
+/* line 22, ../sass/layout/_section.sass */
+.navbar li:last-child {
+  padding-right: 0px;
+}
+/* line 24, ../sass/layout/_section.sass */
+.navbar a {
   text-decoration: none;
   color: #333333;
 }
-/* line 23, ../sass/layout/_section.sass */
-.navbar ul li:last-child {
-  padding-right: 0px;
-}
 
-/* line 26, ../sass/layout/_section.sass */
+/* line 28, ../sass/layout/_section.sass */
 .logo {
   display: inline-block;
-}
-
-/* line 29, ../sass/layout/_section.sass */
-.navbar {
-  float: right;
 }
 
 /* ===========================
  *--- Header, Intro
  *============================ */
-/* line 36, ../sass/layout/_section.sass */
+/* line 35, ../sass/layout/_section.sass */
 .header {
   margin-top: 0;
   width: 100%;
   background-image: url(../img/diwanee-cover.png);
   background-position: center bottom;
 }
-
-/* line 42, ../sass/layout/_section.sass */
-.intro {
+/* line 40, ../sass/layout/_section.sass */
+.header .intro {
+  text-align: center;
   padding: 20px 0 200px;
 }
-
-/* line 46, ../sass/layout/_section.sass */
+/* line 43, ../sass/layout/_section.sass */
 .header .intro h2 {
   font-weight: 600;
   font-size: 120px;
@@ -157,50 +156,49 @@ a.button {
   text-transform: uppercase;
   margin: 100px 0px 20px;
   padding: 0;
-  text-align: center;
 }
-/* line 55, ../sass/layout/_section.sass */
+/* line 51, ../sass/layout/_section.sass */
 .header .intro p {
   font-size: 30px;
   color: #333333;
   letter-spacing: 1px;
   line-height: 40px;
-  text-align: center;
   padding: 40px 250px 60px;
 }
 
-/* line 64, ../sass/layout/_section.sass */
+/* line 58, ../sass/layout/_section.sass */
+.service {
+  color: #333333;
+  line-height: 30px;
+}
+/* line 61, ../sass/layout/_section.sass */
 .service h3 {
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  color: #333333;
   letter-spacing: 4px;
-  line-height: 30px;
 }
-/* line 71, ../sass/layout/_section.sass */
+/* line 66, ../sass/layout/_section.sass */
 .service p {
   font-weight: 400;
   font-size: 20px;
-  color: #333333;
-  line-height: 30px;
   padding: 0 80px;
 }
 
 /* ===========================
  *--- Career
  *============================ */
-/* line 82, ../sass/layout/_section.sass */
+/* line 75, ../sass/layout/_section.sass */
 .career-row {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-/* line 86, ../sass/layout/_section.sass */
+/* line 79, ../sass/layout/_section.sass */
 .info-text {
   padding: 120px 0 40px;
 }
-/* line 87, ../sass/layout/_section.sass */
+/* line 81, ../sass/layout/_section.sass */
 .info-text h3 {
   font-weight: 600;
   font-size: 60px;
@@ -213,7 +211,11 @@ a.button {
   padding: 0;
 }
 
-/* line 100, ../sass/layout/_section.sass */
+/* line 92, ../sass/layout/_section.sass */
+p {
+  text-align: center;
+}
+/* line 94, ../sass/layout/_section.sass */
 p.higher {
   font-weight: 400;
   font-size: 15px;
@@ -221,23 +223,21 @@ p.higher {
   line-height: 15px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  text-align: center;
 }
-/* line 108, ../sass/layout/_section.sass */
+/* line 101, ../sass/layout/_section.sass */
 p.lower {
   font-weight: 300;
   font-size: 36px;
   color: #333333;
   line-height: 50px;
-  text-align: center;
   padding: 50px 150px;
 }
 
-/* line 116, ../sass/layout/_section.sass */
+/* line 108, ../sass/layout/_section.sass */
 .career-jobs {
   padding: 60px 20px 80px 120px;
 }
-/* line 118, ../sass/layout/_section.sass */
+/* line 110, ../sass/layout/_section.sass */
 .career-jobs h3 {
   font-weight: 600;
   font-size: 28px;
@@ -247,7 +247,7 @@ p.lower {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 126, ../sass/layout/_section.sass */
+/* line 118, ../sass/layout/_section.sass */
 .career-jobs p {
   font-weight: 300;
   font-size: 24px;
@@ -256,37 +256,37 @@ p.lower {
   color: #888888;
 }
 
-/* line 133, ../sass/layout/_section.sass */
+/* line 125, ../sass/layout/_section.sass */
 .dark {
   background-color: #2d2d2d;
 }
-/* line 135, ../sass/layout/_section.sass */
+/* line 127, ../sass/layout/_section.sass */
 .dark h3 {
   color: white;
 }
 
-/* line 138, ../sass/layout/_section.sass */
+/* line 130, ../sass/layout/_section.sass */
 .career-jobs ul {
   list-style: none;
 }
-/* line 140, ../sass/layout/_section.sass */
+/* line 132, ../sass/layout/_section.sass */
 .career-jobs ul li {
   display: inline-block;
 }
 
-/* line 143, ../sass/layout/_section.sass */
+/* line 135, ../sass/layout/_section.sass */
 .skills {
   padding: 0px;
   margin-top: 40px;
 }
 
-/* line 147, ../sass/layout/_section.sass */
+/* line 139, ../sass/layout/_section.sass */
 .career-bottom {
   text-align: center;
   margin: 50px 0;
 }
 
-/* line 151, ../sass/layout/_section.sass */
+/* line 143, ../sass/layout/_section.sass */
 a.more {
   font-weight: 600;
   border: 1px solid silver;
@@ -303,15 +303,15 @@ a.more {
 /* ===========================
  *--- About
  *============================ */
-/* line 167, ../sass/layout/_section.sass */
+/* line 159, ../sass/layout/_section.sass */
 .about {
   background-color: #fbfbfb;
 }
-/* line 168, ../sass/layout/_section.sass */
+/* line 160, ../sass/layout/_section.sass */
 .about .info-text {
   padding: 120px 0 40px;
 }
-/* line 169, ../sass/layout/_section.sass */
+/* line 161, ../sass/layout/_section.sass */
 .about .info-text h3 {
   font-weight: 600;
   font-size: 60px;
@@ -324,18 +324,18 @@ a.more {
   padding: 0;
 }
 
-/* line 182, ../sass/layout/_section.sass */
+/* line 174, ../sass/layout/_section.sass */
 p.bottom-text {
   font-weight: 300;
   font-size: 20px;
   color: #333333;
   line-height: 30px;
   text-align: justify;
-  padding: 40px 170px 20px;
+  padding: 40px 15% 20px;
   margin: 0;
 }
 
-/* line 191, ../sass/layout/_section.sass */
+/* line 183, ../sass/layout/_section.sass */
 #newrow {
   padding-top: 10px;
 }
@@ -343,12 +343,12 @@ p.bottom-text {
 /* ===========================
  *--- Contact
  *============================ */
-/* line 198, ../sass/layout/_section.sass */
+/* line 190, ../sass/layout/_section.sass */
 .contact {
   text-align: center;
   padding: 60px 0 80px;
 }
-/* line 201, ../sass/layout/_section.sass */
+/* line 193, ../sass/layout/_section.sass */
 .contact .icons {
   margin: 5px;
 }
@@ -356,23 +356,23 @@ p.bottom-text {
 /* ===========================
  *--- Footer
  *============================ */
-/* line 208, ../sass/layout/_section.sass */
+/* line 200, ../sass/layout/_section.sass */
 .footer {
   background-color: #2d2d2d;
 }
 
-/* line 211, ../sass/layout/_section.sass */
+/* line 203, ../sass/layout/_section.sass */
 ul.office {
   padding-left: 30px;
   padding-right: 0;
 }
-/* line 214, ../sass/layout/_section.sass */
+/* line 206, ../sass/layout/_section.sass */
 ul.office li {
   display: inline-block;
   width: 33%;
   padding: 80px 0;
 }
-/* line 218, ../sass/layout/_section.sass */
+/* line 210, ../sass/layout/_section.sass */
 ul.office li h5 {
   display: inline-block;
   font-weight: 400;
@@ -382,13 +382,13 @@ ul.office li h5 {
   text-transform: uppercase;
   margin: 20px 0;
 }
-/* line 226, ../sass/layout/_section.sass */
+/* line 218, ../sass/layout/_section.sass */
 ul.office li img {
   margin-bottom: -5px;
   margin-right: 10px;
 }
 
-/* line 230, ../sass/layout/_section.sass */
+/* line 222, ../sass/layout/_section.sass */
 address {
   font-style: normal;
   font-weight: 300;
@@ -400,12 +400,12 @@ address {
 /* ===========================
  *--- Copyright
  *============================ */
-/* line 241, ../sass/layout/_section.sass */
+/* line 233, ../sass/layout/_section.sass */
 .copyright {
   background-color: #222222;
   height: 60px;
 }
-/* line 244, ../sass/layout/_section.sass */
+/* line 236, ../sass/layout/_section.sass */
 .copyright span {
   font-weight: 400;
   font-size: 12px;
@@ -415,12 +415,16 @@ address {
   position: relative;
 }
 
-/* line 252, ../sass/layout/_section.sass */
+/* line 244, ../sass/layout/_section.sass */
 .partright {
   padding-top: 25px;
 }
 
-/* line 255, ../sass/layout/_section.sass */
+/* line 247, ../sass/layout/_section.sass */
+.itemright {
+  float: right;
+}
+/* line 249, ../sass/layout/_section.sass */
 .itemright img {
   width: 30px;
   padding-top: 15px;
@@ -428,25 +432,20 @@ address {
   float: left;
 }
 
-/* line 261, ../sass/layout/_section.sass */
+/* line 255, ../sass/layout/_section.sass */
 .partleft {
   float: left;
   text-transform: uppercase;
   padding-top: 25px;
 }
 
-/* line 266, ../sass/layout/_section.sass */
+/* line 260, ../sass/layout/_section.sass */
 .partright a {
   text-decoration: none;
   color: #5b5b5b;
   float: right;
   margin-top: 20px;
   padding-left: 5px;
-}
-
-/* line 273, ../sass/layout/_section.sass */
-.itemright {
-  float: right;
 }
 
 /* Toggle menu */
@@ -471,31 +470,12 @@ address {
 #navmenu ul.expanded {
   display: block;
 }
-
-/* line 19, ../sass/modules/_tools.sass */
-.visiblex {
-  display: inline-block;
-  float: right;
-  margin-right: 5px;
-}
-
-/* line 24, ../sass/modules/_tools.sass */
+/* line 18, ../sass/modules/_tools.sass */
 #navmenu li {
   border-bottom: 1px solid #4b4b4b;
 }
-
-/* line 27, ../sass/modules/_tools.sass */
-#lileft {
-  text-align: left;
-}
-/* line 29, ../sass/modules/_tools.sass */
-#lileft a {
-  float: left;
-  margin-left: 10px;
-}
-
-/* line 33, ../sass/modules/_tools.sass */
-#navmenu li a {
+/* line 20, ../sass/modules/_tools.sass */
+#navmenu a {
   font-weight: 600;
   font-size: 10px;
   display: block;
@@ -507,7 +487,24 @@ address {
   text-transform: uppercase;
 }
 
-/* line 44, ../sass/modules/_tools.sass */
+/* line 31, ../sass/modules/_tools.sass */
+.visiblex {
+  display: inline-block;
+  float: right;
+  margin-right: 5px;
+}
+
+/* line 37, ../sass/modules/_tools.sass */
+#lileft {
+  text-align: left;
+}
+/* line 39, ../sass/modules/_tools.sass */
+#lileft a {
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 43, ../sass/modules/_tools.sass */
 .follow-icon {
   float: right;
   padding-top: 5px;
@@ -515,157 +512,151 @@ address {
 }
 
 /* ===========================
- *--- Responsivnes
- *============================ */
+ * --- Responsivnes
+ * ============================ */
 @media only screen and (max-width: 1200px) {
-  /* line 28, ../sass/style_base.sass */
+  /* line 7, ../sass/rwd/_responsivnes.sass */
   .container {
     width: 100%;
   }
 
-  /* line 30, ../sass/style_base.sass */
+  /* line 10, ../sass/rwd/_responsivnes.sass */
   .header {
     background-position: center;
     background-size: cover;
   }
 
-  /* line 33, ../sass/style_base.sass */
+  /* line 14, ../sass/rwd/_responsivnes.sass */
   .logo {
     margin-left: 20px;
   }
 
-  /* line 35, ../sass/style_base.sass */
+  /* line 17, ../sass/rwd/_responsivnes.sass */
   .navbar {
     margin-right: 20px;
   }
 
-  /* line 37, ../sass/style_base.sass */
+  /* line 20, ../sass/rwd/_responsivnes.sass */
   .copyright span {
     margin-left: 20px;
   }
 
-  /* line 39, ../sass/style_base.sass */
+  /* line 23, ../sass/rwd/_responsivnes.sass */
   .itemright {
     margin-right: 20px;
   }
 
-  /* line 41, ../sass/style_base.sass */
+  /* line 26, ../sass/rwd/_responsivnes.sass */
   ul.inline li {
     padding: 60px 0;
   }
 
-  /* line 43, ../sass/style_base.sass */
+  /* line 29, ../sass/rwd/_responsivnes.sass */
   .service p {
     font-size: 18px;
     padding: 0 40px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 48, ../sass/style_base.sass */
+  /* line 35, ../sass/rwd/_responsivnes.sass */
   .navigation {
     padding: 15px 0;
   }
 
-  /* line 50, ../sass/style_base.sass */
+  /* line 38, ../sass/rwd/_responsivnes.sass */
   .service ul li {
     width: 100%;
     display: block;
   }
 
-  /* line 53, ../sass/style_base.sass */
+  /* line 42, ../sass/rwd/_responsivnes.sass */
+  p.lower {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 20px;
+  }
+
+  /* line 47, ../sass/rwd/_responsivnes.sass */
+  .career-jobs {
+    padding: 30px 20px 40px 20px;
+  }
+
+  /* line 50, ../sass/rwd/_responsivnes.sass */
   .header .intro p {
     padding: 20px 50px 30px;
   }
 }
 @media only screen and (max-width: 390px) and (orientation: portrait) {
-  /* line 57, ../sass/style_base.sass */
-  .container {
-    width: 100%;
-  }
-
-  /* line 59, ../sass/style_base.sass */
+  /* line 55, ../sass/rwd/_responsivnes.sass */
   .navigation {
     padding: 15px 0;
   }
 
-  /* line 61, ../sass/style_base.sass */
+  /* line 58, ../sass/rwd/_responsivnes.sass */
   .navbar {
     display: none;
   }
 
-  /* line 63, ../sass/style_base.sass */
+  /* line 61, ../sass/rwd/_responsivnes.sass */
   .menu-icon {
     display: inline;
     float: right;
   }
 
-  /* line 66, ../sass/style_base.sass */
-  .header {
-    background-position: center;
-    background-size: cover;
+  /* line 66, ../sass/rwd/_responsivnes.sass */
+  .header .intro {
+    padding: 0 0 90px;
   }
-  /* line 70, ../sass/style_base.sass */
+  /* line 68, ../sass/rwd/_responsivnes.sass */
   .header .intro h2 {
     font-size: 40px;
     margin: 40px 0px 15px;
   }
-  /* line 73, ../sass/style_base.sass */
+  /* line 71, ../sass/rwd/_responsivnes.sass */
   .header .intro p {
     padding: 0;
     font-size: 18px;
     line-height: 22px;
   }
-
-  /* line 77, ../sass/style_base.sass */
-  .intro {
-    padding: 0 0 90px;
-  }
-  /* line 79, ../sass/style_base.sass */
-  .intro p {
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  /* line 82, ../sass/style_base.sass */
-  .intro p span {
+  /* line 75, ../sass/rwd/_responsivnes.sass */
+  .header .intro p span {
     display: none;
   }
 
-  /* line 84, ../sass/style_base.sass */
+  /* line 78, ../sass/rwd/_responsivnes.sass */
   .service ul li {
     width: 100%;
-    display: block;
   }
 
-  /* line 87, ../sass/style_base.sass */
+  /* line 81, ../sass/rwd/_responsivnes.sass */
   .logo {
     margin-left: 15px;
   }
-  /* line 89, ../sass/style_base.sass */
+  /* line 83, ../sass/rwd/_responsivnes.sass */
   .logo img {
     width: 110px;
   }
 
-  /* line 91, ../sass/style_base.sass */
+  /* line 87, ../sass/rwd/_responsivnes.sass */
   .service h3 {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 20px;
   }
-
-  /* line 96, ../sass/style_base.sass */
-  ul.inline li {
-    padding: 60px 0;
-  }
-
-  /* line 98, ../sass/style_base.sass */
+  /* line 92, ../sass/rwd/_responsivnes.sass */
   .service p {
     font-size: 12px;
     line-height: 18px;
     padding: 0 25px;
   }
 
-  /* line 102, ../sass/style_base.sass */
+  /* line 97, ../sass/rwd/_responsivnes.sass */
+  ul.inline li {
+    padding: 60px 0;
+  }
+
+  /* line 100, ../sass/rwd/_responsivnes.sass */
   .info-text h3 {
     font-size: 28px;
     line-height: 35px;
@@ -673,19 +664,19 @@ address {
     padding: 0;
   }
 
-  /* line 107, ../sass/style_base.sass */
+  /* line 105, ../sass/rwd/_responsivnes.sass */
   p.higher {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 2px;
   }
 
-  /* line 111, ../sass/style_base.sass */
+  /* line 110, ../sass/rwd/_responsivnes.sass */
   .info-text {
     padding: 50px 0 15px;
   }
 
-  /* line 113, ../sass/style_base.sass */
+  /* line 113, ../sass/rwd/_responsivnes.sass */
   p.lower {
     font-size: 18px;
     color: #333333;
@@ -693,38 +684,38 @@ address {
     padding: 10px 30px;
   }
 
-  /* line 118, ../sass/style_base.sass */
+  /* line 119, ../sass/rwd/_responsivnes.sass */
   .career-jobs {
     padding: 25px 10px 30px 30px;
   }
-  /* line 120, ../sass/style_base.sass */
+  /* line 121, ../sass/rwd/_responsivnes.sass */
   .career-jobs h3 {
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 20px;
   }
-  /* line 124, ../sass/style_base.sass */
+  /* line 125, ../sass/rwd/_responsivnes.sass */
   .career-jobs p {
     font-size: 12px;
     line-height: 14px;
   }
 
-  /* line 128, ../sass/style_base.sass */
+  /* line 129, ../sass/rwd/_responsivnes.sass */
   a.tags {
     font-size: 8px;
     padding: 3px 10px;
     margin-top: 5px;
   }
-  /* line 132, ../sass/style_base.sass */
+  /* line 133, ../sass/rwd/_responsivnes.sass */
   a.button {
     display: none;
   }
 
-  /* line 134, ../sass/style_base.sass */
+  /* line 136, ../sass/rwd/_responsivnes.sass */
   .about .info-text {
     padding: 60px 0 20px;
   }
-  /* line 136, ../sass/style_base.sass */
+  /* line 138, ../sass/rwd/_responsivnes.sass */
   .about .info-text h3 {
     font-size: 30px;
     letter-spacing: 3px;
@@ -732,72 +723,72 @@ address {
     margin: 20px 0 20px;
   }
 
-  /* line 141, ../sass/style_base.sass */
+  /* line 144, ../sass/rwd/_responsivnes.sass */
   p.bottom-text {
     font-size: 14px;
     line-height: 20px;
     padding: 20px 20px 10px;
   }
 
-  /* line 145, ../sass/style_base.sass */
+  /* line 149, ../sass/rwd/_responsivnes.sass */
   .contact {
     padding: 30px 0 40px;
   }
 
-  /* line 147, ../sass/style_base.sass */
+  /* line 152, ../sass/rwd/_responsivnes.sass */
   ul.office {
     padding-left: 0px;
   }
 
-  /* line 149, ../sass/style_base.sass */
+  /* line 155, ../sass/rwd/_responsivnes.sass */
   address {
     font-size: 12px;
     line-height: 16px;
   }
 
-  /* line 152, ../sass/style_base.sass */
+  /* line 159, ../sass/rwd/_responsivnes.sass */
   ul.office li {
     display: block;
     width: 100%;
     padding: 20px 0;
     text-align: center;
   }
-  /* line 153, ../sass/style_base.sass */
+  /* line 160, ../sass/rwd/_responsivnes.sass */
   ul.office li h5 {
     font-size: 16px;
     letter-spacing: 2px;
     margin: 10px 0;
   }
-  /* line 157, ../sass/style_base.sass */
+  /* line 164, ../sass/rwd/_responsivnes.sass */
   ul.office li img {
     margin-bottom: -3px;
     margin-right: 0px;
   }
 
-  /* line 164, ../sass/style_base.sass */
+  /* line 172, ../sass/rwd/_responsivnes.sass */
   .copyright {
     height: auto;
   }
-  /* line 166, ../sass/style_base.sass */
+  /* line 174, ../sass/rwd/_responsivnes.sass */
   .copyright span {
     margin-left: 0px;
     font-size: 10px;
     letter-spacing: 1px;
   }
 
-  /* line 170, ../sass/style_base.sass */
+  /* line 179, ../sass/rwd/_responsivnes.sass */
   .itemright {
     float: none;
     text-align: center;
   }
 
-  /* line 173, ../sass/style_base.sass */
+  /* line 183, ../sass/rwd/_responsivnes.sass */
   .partleft {
     float: none;
     padding-top: 0px;
   }
 
-  /* line 176, ../sass/style_base.sass */
+  /* line 187, ../sass/rwd/_responsivnes.sass */
   .itemleft {
     background-color: #2d2d2d;
     text-align: center;
@@ -806,12 +797,12 @@ address {
     padding-bottom: 5px;
   }
 
-  /* line 182, ../sass/style_base.sass */
+  /* line 194, ../sass/rwd/_responsivnes.sass */
   .itemright {
     height: 50px;
     text-align: center;
   }
-  /* line 185, ../sass/style_base.sass */
+  /* line 197, ../sass/rwd/_responsivnes.sass */
   .itemright img {
     width: 20px;
     float: none;
@@ -820,12 +811,12 @@ address {
     padding-right: 0px;
   }
 
-  /* line 191, ../sass/style_base.sass */
+  /* line 204, ../sass/rwd/_responsivnes.sass */
   #hidden {
     display: none;
   }
 
-  /* line 193, ../sass/style_base.sass */
+  /* line 207, ../sass/rwd/_responsivnes.sass */
   .partright a {
     text-decoration: none;
     font-size: 12px;
@@ -835,7 +826,7 @@ address {
     margin-left: 10px;
   }
 
-  /* line 200, ../sass/style_base.sass */
+  /* line 215, ../sass/rwd/_responsivnes.sass */
   .hideham {
     display: none;
   }

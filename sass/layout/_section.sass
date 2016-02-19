@@ -9,25 +9,24 @@
   display: block
   padding: 30px 0
 
-.navbar ul
-  display: inline-block
-  list-style: none
+.navbar
+  float: right 
+  ul
+    display: inline-block
+    list-style: none
   li
     position: relative
     display: inline-block
     padding: 10px 30px
     text-transform: $let-up
-    a
-      text-decoration: none
-      color: $font-color
     &:last-child
       padding-right: 0px
-
+  a
+    text-decoration: none
+    color: $font-color
+    
 .logo
   display: inline-block
-
-.navbar
-  float: right
 
 /* ===========================
  *--- Header, Intro
@@ -38,41 +37,35 @@
   width: $full
   background-image: url(../img/diwanee-cover.png)
   background-position: center bottom
-
-.intro
-  padding: $sweet-rate 0 $sweet-rate*10
-
-.header .intro
-  h2
-    font-weight: $bold-weight
-    font-size: $sweet-rate*6
-    color: $font-color
-    letter-spacing: 1px
-    text-transform: $let-up
-    margin: 100px 0px $sweet-rate
-    padding: 0
+  .intro
     text-align: center
-  p
-    font-size: 30px
-    color: $font-color
-    letter-spacing: 1px
-    line-height: $sweet-rate*2
-    text-align: center
-    padding: 40px 250px 60px
+    padding: $sweet-rate 0 $sweet-rate*10
+    h2
+      font-weight: $bold-weight
+      font-size: $sweet-rate*6
+      color: $font-color
+      letter-spacing: 1px
+      text-transform: $let-up
+      margin: $sweet-rate*5 0px $sweet-rate
+      padding: 0
+    p
+      font-size: 30px
+      color: $font-color
+      letter-spacing: 1px
+      line-height: $sweet-rate*2
+      padding: $sweet-rate*2 250px $sweet-rate*3
 
 .service
+  color: $font-color
+  line-height: $sweet-rate + 10
   h3
     font-weight: $bold-weight
     font-size: 24px
     text-transform: $let-up
-    color: $font-color
     letter-spacing: 4px
-    line-height: 30px
   p
     font-weight: $regular-weight
     font-size: $sweet-rate
-    color: $font-color
-    line-height: 30px
     padding: 0 $sweet-rate*4
 
 /* ===========================
@@ -84,6 +77,7 @@
   padding-bottom: 0px
 
 .info-text
+  padding: $sweet-rate*6 0 $sweet-rate*2
   h3
     font-weight: $bold-weight
     font-size: $sweet-rate*3
@@ -94,23 +88,21 @@
     text-align: center
     margin: 50px 0 70px
     padding: 0
-  padding: $sweet-rate*6 0 $sweet-rate*2
-
+  
 p
+  text-align: center
   &.higher
     font-weight: $regular-weight
     font-size: 15px
-    color: #C0C0C0
+    color: $silver
     line-height: 15px
     letter-spacing: 5px
     text-transform: $let-up
-    text-align: center
   &.lower
     font-weight: $light-weight
     font-size: 36px
     color: $font-color
     line-height: 50px
-    text-align: center
     padding: 50px 150px
 
 .career-jobs
@@ -150,7 +142,7 @@ p
 
 a.more
   font-weight: $bold-weight
-  border: 1px solid #C0C0C0
+  border: 1px solid $silver
   font-size: 14px
   color: $font-color
   letter-spacing: 2px
@@ -185,7 +177,7 @@ p.bottom-text
   color: $font-color
   line-height: 30px
   text-align: justify
-  padding: 40px 170px $sweet-rate
+  padding: 40px 15% $sweet-rate
   margin: 0
 
 #newrow
@@ -240,7 +232,7 @@ address
 
 .copyright
   background-color: #222222
-  height: 60px
+  height: $sweet-rate*3
   span
     font-weight: $regular-weight
     font-size: 12px
@@ -252,11 +244,13 @@ address
 .partright
   padding-top: 25px
 
-.itemright img
-  width: 30px
-  padding-top: 15px
-  padding-right: 5px
-  float: left
+.itemright 
+  float: right
+  img
+    width: 30px
+    padding-top: 15px
+    padding-right: 5px
+    float: left
 
 .partleft
   float: left
@@ -269,6 +263,4 @@ address
   float: right
   margin-top: $sweet-rate
   padding-left: 5px
-
-.itemright
-  float: right
+  
