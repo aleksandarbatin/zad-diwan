@@ -1,0 +1,66 @@
+/* ===========================
+ *--- General
+ *============================
+
+body
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: $regular-weight
+  height: $full
+
+html, body
+  margin: 0
+  padding: 0
+
+html
+  width: $full
+  height: $full
+
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+  &.inline li
+    padding: 150px 0
+    text-align: center
+    width: 33%
+    display: inline-block
+    &.grey
+      background-color: #E9E9E9
+    &.beige
+      background-color: #FBFBFB
+
+a
+  &.tags
+    font-weight: $regular-weight
+    font-size: 16px
+    color: #C41230
+    letter-spacing: 2px
+    text-decoration: none
+    padding: 5px 20px
+    border: 1px solid #C0C0C0
+    margin-top: 10px
+  &.button
+    font-weight: $bold-weight
+    border: 1px solid #979797
+    font-size: 18px
+    color: $font-color
+    letter-spacing: 2px
+    line-height: 23px
+    text-transform: $let-up
+    padding: 10px 35px
+    text-decoration: none
+    float: right
+
+
+.dark a.button
+  color: #EAEAEA
+
+.container
+  width: 1200px
+  margin: 0 auto
+  display: block
+  &:after
+    clear: both
+
+.menu-icon, .menu-iconx
+  display: none

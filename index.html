@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zad-diwan</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="css/syle.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     
 </head>
 <body>
@@ -37,8 +37,7 @@
                 <hr align="center" width="5%" size="3px" color="#C41230">
                 <p>Digital Media Agency <span>always looking for motivated, multi-talented and organized people to join our diverse team.</span></p>
             </div> 
-    	</div>
-    	
+    	</div>	
     </div>    
     <div class="service">
     	<ul class="inline">
@@ -189,24 +188,7 @@
             <div class="itemleft"><span class="partleft">Copyright @2015 Diwanee Serbia <span id="hidden">all rights resrerved</span></span></div>  
         </div>
     </div>
-    <script type="text/javascript">
-	var nav = document.getElementById('navmenu_list');
-    var ham = document.getElementById('menu_ham');
-    var cross = document.getElementById('menu_x');
-
-function toggleNav(e) {
-    nav.classList.toggle('expanded');
-    ham.classList.toggle('hideham');
-    cross.classList.toggle('visiblex');
-    e.preventDefault();
-}
-
-document
-    .getElementById('navmenu')
-    .getElementsByClassName('menu_button')[0]
-    .onclick = toggleNav;
-
-nav.onclick = toggleNav;
+    <script src="js/menumobile.js" type="text/javascript">
 	</script>
 </body>
 </html>

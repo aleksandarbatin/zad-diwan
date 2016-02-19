@@ -1,0 +1,201 @@
+// General
+
+@import general/variables
+@import general/mastergen
+
+// Sections
+
+@import layout/section
+
+
+// Tools
+
+@import modules/tools
+
+
+// RWD
+
+@import rwd/responsivnes
+
+
+
+
+/* ===========================
+ *--- Responsivnes
+ *============================
+
+@media only screen and (max-width: 1200px)
+  .container
+    width: $full
+  .header
+    background-position: center
+    background-size: cover
+  .logo
+    margin-left: $sweet-rate
+  .navbar
+    margin-right: $sweet-rate
+  .copyright span
+    margin-left: $sweet-rate
+  .itemright
+    margin-right: $sweet-rate
+  ul.inline li
+    padding: $sweet-rate*3 0
+  .service p
+    font-size: 18px
+    padding: 0 40px
+
+@media only screen and (max-width: 768px)
+  .navigation
+    padding: 15px 0
+  .service ul li
+    width: $full
+    display: block
+  .header .intro p
+    padding: $sweet-rate 50px 30px
+
+@media only screen and (max-width: 390px) and (orientation: portrait)
+  .container
+    width: $full
+  .navigation
+    padding: 15px 0
+  .navbar
+    display: none
+  .menu-icon
+    display: inline
+    float: right
+  .header
+    background-position: center
+    background-size: cover
+    .intro
+      h2
+        font-size: $sweet-rate*2
+        margin: 40px 0px 15px
+      p
+        padding: 0
+        font-size: 18px
+        line-height: 22px
+  .intro
+    padding: 0 0 90px
+    p
+      font-weight: $bold-weight
+      text-transform: $let-up
+      span
+        display: none
+  .service ul li
+    width: $full
+    display: block
+  .logo
+    margin-left: 15px
+    img
+      width: 110px
+  .service h3
+    font-size: 16px
+    text-transform: $let-up
+    letter-spacing: 3px
+    line-height: $sweet-rate
+  ul.inline li
+    padding: $sweet-rate*3 0
+  .service p
+    font-size: 12px
+    line-height: 18px
+    padding: 0 25px
+  .info-text h3
+    font-size: 28px
+    line-height: 35px
+    margin: 10px 0
+    padding: 0
+  p.higher
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 2px
+  .info-text
+    padding: 50px 0 15px
+  p.lower
+    font-size: 18px
+    color: $font-color
+    line-height: 24px
+    padding: 10px 30px
+  .career-jobs
+    padding: 25px 10px 30px 30px
+    h3
+      font-size: 16px
+      letter-spacing: 2px
+      line-height: $sweet-rate
+    p
+      font-size: 12px
+      line-height: 14px
+  a
+    &.tags
+      font-size: 8px
+      padding: 3px 10px
+      margin-top: 5px
+    &.button
+      display: none
+  .about .info-text
+    padding: $sweet-rate*3 0 $sweet-rate
+    h3
+      font-size: 30px
+      letter-spacing: 3px
+      line-height: 40px
+      margin: $sweet-rate 0 $sweet-rate
+  p.bottom-text
+    font-size: 14px
+    line-height: $sweet-rate
+    padding: $sweet-rate $sweet-rate 10px
+  .contact
+    padding: 30px 0 $sweet-rate*2
+  ul.office
+    padding-left: 0px
+  address
+    font-size: 12px
+    line-height: 16px
+  ul.office li
+    h5
+      font-size: 16px
+      letter-spacing: 2px
+      margin: 10px 0
+    img
+      margin-bottom: -3px
+      margin-right: 0px
+    display: block
+    width: 100%
+    padding: $sweet-rate 0
+    text-align: center
+  .copyright
+    height: auto
+    span
+      margin-left: 0px
+      font-size: 10px
+      letter-spacing: 1px
+  .itemright
+    float: none
+    text-align: center
+  .partleft
+    float: none
+    padding-top: 0px
+  .itemleft
+    background-color: #2D2D2D
+    text-align: center
+    height: $sweet-rate
+    padding-top: 5px
+    padding-bottom: 5px
+  .itemright
+    height: 50px
+    text-align: center
+    img
+      width: $sweet-rate
+      float: none
+      margin-top: 10px
+      padding-top: 0px
+      padding-right: 0px
+  #hidden
+    display: none
+  .partright a
+    text-decoration: none
+    font-size: 12px
+    color: #5B5B5B
+    float: none
+    margin-bottom: $sweet-rate
+    margin-left: 10px
+  .hideham
+    display: none
