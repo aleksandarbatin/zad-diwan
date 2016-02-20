@@ -3,9 +3,8 @@
  *============================
 
 .navigation
-  font-size: 13px
+  +few-prop($regular-weight, 13px, 16px, 4px)
   color: $font-color
-  letter-spacing: 4px
   display: block
   padding: 30px 0
 
@@ -41,32 +40,25 @@
     text-align: center
     padding: $sweet-rate 0 $sweet-rate*10
     h2
-      font-weight: $bold-weight
-      font-size: $sweet-rate*6
+      +few-prop($bold-weight, $sweet-rate*6, 130px, 1px)
       color: $font-color
-      letter-spacing: 1px
       text-transform: $let-up
       margin: $sweet-rate*5 0px $sweet-rate
       padding: 0
     p
-      font-size: 30px
+      +few-prop($regular-weight, 30px, $sweet-rate*2, 1px)
       color: $font-color
-      letter-spacing: 1px
-      line-height: $sweet-rate*2
       padding: $sweet-rate*2 250px $sweet-rate*3
 
 .service
   color: $font-color
   line-height: $sweet-rate + 10
   h3
-    font-weight: $bold-weight
-    font-size: 24px
+    +few-prop($bold-weight, 24px, 30px, 4px)
     text-transform: $let-up
-    letter-spacing: 4px
   p
-    font-weight: $regular-weight
-    font-size: $sweet-rate
-    padding: 0 $sweet-rate*4
+    +few-prop($light-weight, $sweet-rate, 26px, 1px)
+    padding: 0 $sweet-rate*2+10
 
 /* ===========================
  *--- Career
@@ -79,11 +71,8 @@
 .info-text
   padding: $sweet-rate*6 0 $sweet-rate*2
   h3
-    font-weight: $bold-weight
-    font-size: $sweet-rate*3
+    +few-prop($bold-weight, $sweet-rate*3, 75px, 3px)
     color: $font-color
-    letter-spacing: 3px
-    line-height: 75px
     text-transform: $let-up
     text-align: center
     margin: 50px 0 70px
@@ -92,40 +81,30 @@
 p
   text-align: center
   &.higher
-    font-weight: $regular-weight
-    font-size: 15px
+    +few-prop($regular-weight, 15px, 15px, 5px)
     color: $silver
-    line-height: 15px
-    letter-spacing: 5px
     text-transform: $let-up
   &.lower
-    font-weight: $light-weight
-    font-size: 36px
+    +few-prop($light-weight, 36px, 50px, 1px)
     color: $font-color
-    line-height: 50px
     padding: 50px 150px
 
 .career-jobs
   padding: $sweet-rate*3 $sweet-rate $sweet-rate*4 $sweet-rate*6
   h3
-    font-weight: $bold-weight
-    font-size: 28px
+    +few-prop($bold-weight, 28px, 36px, 2.33)
     color: $font-color
-    letter-spacing: 2.33px
-    line-height: 36px
     text-align: left
     text-transform: $let-up
   p
-    font-weight: $light-weight
-    font-size: 24px
-    line-height: 34px
+    +few-prop($light-weight, 24px, 34px, 0px)
     display: inline
-    color: #888
+    color: $light-grey
 
 .dark
-  background-color: #2D2D2D
+  background-color: $darkpart
   h3
-    color: #FFFFFF
+    color: $white
 
 .career-jobs ul
   list-style: none
@@ -141,12 +120,9 @@ p
   margin: 50px 0
 
 a.more
-  font-weight: $bold-weight
+  +few-prop($bold-weight, 14px, 15px, 2px)
   border: 1px solid $silver
-  font-size: 14px
   color: $font-color
-  letter-spacing: 2px
-  line-height: 15px
   text-transform: $let-up
   padding: 10px 30px
   text-decoration: none
@@ -159,23 +135,18 @@ a.more
 .about
   .info-text
     h3
-      font-weight: $bold-weight
-      font-size: $sweet-rate*3
+      +few-prop($bold-weight, $sweet-rate*3, 75px, 3px)
       color: $font-color
-      letter-spacing: 3px
-      line-height: 75px
       text-transform: $let-up
       text-align: center
       margin: 50px 0 70px
       padding: 0
     padding: $sweet-rate*6 0 $sweet-rate*2
-  background-color: #FBFBFB
+  background-color: $beige
 
 p.bottom-text
-  font-weight: $light-weight
-  font-size: $sweet-rate
+  +few-prop($light-weight, $sweet-rate, 30px, 1px)
   color: $font-color
-  line-height: 30px
   text-align: justify
   padding: 40px 15% $sweet-rate
   margin: 0
@@ -198,7 +169,7 @@ p.bottom-text
  *============================
 
 .footer
-  background-color: #2D2D2D
+  background-color: $darkpart
 
 ul.office
   padding-left: 30px
@@ -209,10 +180,8 @@ ul.office
     padding: $sweet-rate*4 0
     h5
       display: inline-block
-      font-weight: $regular-weight
-      font-size: 18px
-      color: #FFFFFF
-      letter-spacing: 2px
+      +few-prop($regular-weight, 18px, 20px, 2px)
+      color: $white
       text-transform: $let-up
       margin: $sweet-rate 0
     img
@@ -221,23 +190,19 @@ ul.office
 
 address
   font-style: normal
-  font-weight: $light-weight
-  font-size: 18px
-  color: #9B9B9B
-  line-height: 28px
+  +few-prop($light-weight, 18px, 28px, 1px)
+  color: $easy-grey
 
 /* ===========================
  *--- Copyright
  *============================
 
 .copyright
-  background-color: #222222
+  background-color: $dark-grey
   height: $sweet-rate*3
   span
-    font-weight: $regular-weight
-    font-size: 12px
-    color: #5B5B5B
-    letter-spacing: 2px
+    +few-prop($regular-weight, 12px, 12px, 2px)
+    color: $copy-color
     margin: 0
     position: relative
 
@@ -259,7 +224,7 @@ address
 
 .partright a
   text-decoration: none
-  color: #5B5B5B
+  color: $copy-color
   float: right
   margin-top: $sweet-rate
   padding-left: 5px

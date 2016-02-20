@@ -40,8 +40,7 @@
     display: block
 
   p.lower 
-    font-size: 26px
-    line-height: 30px
+    +few-prop(null, 26px, 30px, null)
     padding: $sweet-rate
 
   .career-jobs 
@@ -64,14 +63,13 @@
   
   .header 
     .intro
-      padding: 0 0 90px
+      padding: 0 0 100px
       h2
-        font-size: $sweet-rate*2
+        +few-prop(null, $sweet-rate*2, 50px, null)
         margin: 40px 0px 15px
       p
         padding: 0
-        font-size: 18px
-        line-height: 22px
+        +few-prop(null, 18px, 22px, null)
         span
           display: none
   
@@ -85,49 +83,38 @@
   
   .service 
     h3
-      font-size: 16px
-      text-transform: $let-up
-      letter-spacing: 3px
-      line-height: $sweet-rate
+      +few-prop($regular-weight, 16px, $sweet-rate, 3px)
     p
-      font-size: 12px
-      line-height: 18px
+      +few-prop(null, 12px, 18px, null)
       padding: 0 25px
   
   ul.inline li
     padding: $sweet-rate*3 0
   
   .info-text h3
-    font-size: 28px
-    line-height: 35px
+    +few-prop(null, 28px, 35px, null)
     margin: 10px 0
     padding: 0
   p.higher
-    font-size: 12px
-    line-height: 14px
-    letter-spacing: 2px
+    +few-prop(null, 12px, 14px, 2px)
   
   .info-text
     padding: 50px 0 15px
   
   p.lower
-    font-size: 18px
+    +few-prop(null, 18px, 24px, null)
     color: $font-color
-    line-height: 24px
     padding: 10px 30px
   
   .career-jobs
     padding: 25px 10px 30px 30px
     h3
-      font-size: 16px
-      letter-spacing: 2px
-      line-height: $sweet-rate
+      +few-prop(null, 16px, $sweet-rate, 2px)
     p
-      font-size: 12px
-      line-height: 14px
+      +few-prop(null, 12px, 14px, null)
   a
     &.tags
-      font-size: 8px
+      +few-prop(null, 8px, null, null)
       padding: 3px 10px
       margin-top: 5px
     &.button
@@ -136,14 +123,11 @@
   .about .info-text
     padding: $sweet-rate*3 0 $sweet-rate
     h3
-      font-size: 30px
-      letter-spacing: 3px
-      line-height: 40px
+      +few-prop(null, 30px, 40px, 3px)
       margin: $sweet-rate 0 $sweet-rate
   
   p.bottom-text
-    font-size: 14px
-    line-height: $sweet-rate
+    +few-prop(null, 14px, $sweet-rate, null)
     padding: $sweet-rate $sweet-rate 10px
   
   .contact
@@ -153,13 +137,11 @@
     padding-left: 0px
   
   address
-    font-size: 12px
-    line-height: 16px
+    +few-prop(null, 12px, 16px, null)
   
   ul.office li
     h5
-      font-size: 16px
-      letter-spacing: 2px
+      +few-prop(null, 16px, null, 2px)
       margin: 10px 0
     img
       margin-bottom: -3px
@@ -173,8 +155,7 @@
     height: auto
     span
       margin-left: 0px
-      font-size: 10px
-      letter-spacing: 1px
+      +few-prop(null, 10px, null, 1px)
   
   .itemright
     float: none
